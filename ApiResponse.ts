@@ -1,11 +1,11 @@
 export class ApiResponse<T>
 {
-    success:boolean;
-    data:T;
+    success?:boolean;
+    data?:T;
     pager?:T;
     meta?:T;
-    message:string;
-    statusCode:number;
+    message?:string;
+    statusCode?:number;
 
     public static success(data:any):ApiResponse<any>
     {

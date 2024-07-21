@@ -1,6 +1,6 @@
 {
   "name": "@statelytech/js-common",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Common JS Utilities",
   "main": "index.js",
   "scripts": {

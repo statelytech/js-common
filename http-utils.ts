@@ -5,7 +5,7 @@ export class HttpUtils
     createView:boolean = false;
     detailView:boolean = false;
 
-    public static toUrlParam(jsonobject):string
+    public static toUrlParam(jsonobject:any):string
     {
         Object.keys(jsonobject).forEach(key => {
             if (jsonobject[key] === null ||
