@@ -1,12 +1,12 @@
 
 export class ObjectUtil
 {
-    public static noValue(input): boolean
+    public static noValue(input:any): boolean
     {
         return !this.hasValue(input);
     }
 
-    public static hasValue(input): boolean
+    public static hasValue(input:any): boolean
     {
         if(input === undefined
             || input === 'undefined' || input === null || input === 'null' )
@@ -18,7 +18,7 @@ export class ObjectUtil
     }
 
 
-    public static isValidNumber(value):boolean
+    public static isValidNumber(value:any):boolean
     {
         // @ts-ignore
         if (ObjectUtil.noValue(value) || Number.isNaN(value)) {
@@ -33,7 +33,7 @@ export class ObjectUtil
     //   return !this.hasValue(value);
     // }
 
-    public static isNullOrUndefined(value): boolean {
+    public static isNullOrUndefined(value:any): boolean {
         console.log("isNullOrUndefined value = ",value);
         if (value === null || value === undefined || value === 'null' || value === 'undefined') {
             return true;
@@ -41,7 +41,7 @@ export class ObjectUtil
         return false;
     }
 
-    public static toValue(input): any
+    public static toValue(input:any): any
     {
         if(ObjectUtil.hasValue(input))
         {
@@ -51,7 +51,7 @@ export class ObjectUtil
     }
 
 
-    public static nullToZero(input): any
+    public static nullToZero(input:any): any
     {
         if(ObjectUtil.hasValue(input))
         {

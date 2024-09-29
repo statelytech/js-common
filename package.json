@@ -1,9 +1,12 @@
 {
   "name": "@statelytech/js-common",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Common JS Utilities",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,9 +18,13 @@
     "utils"
   ],
   "author": "Stately Technologies",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/statelytech/js-common/issues"
   },
-  "homepage": "https://github.com/statelytech/js-common#readme"
+  "homepage": "https://github.com/statelytech/js-common#readme",
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "~5.4.5"
+  }
 }
